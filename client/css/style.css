@@ -125,7 +125,7 @@ label {
   border-style: solid;
   border-width: 2px;
   padding: 13px;
-  padding-right: 64px;
+  padding-right: 52px;
   border-radius: 8px;
   margin: 45px 0px;
 }
@@ -145,4 +145,9 @@ label {
   top: -44px;
   left: 100px;
   font-size: 273%;
+}
+
+.msTitle {
+  position: relative;
+  left: 20px;
 }

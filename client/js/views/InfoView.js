@@ -13,7 +13,7 @@ var InfoView = Backbone.View.extend({
   	this.$el.empty();
     this.$el.append(
       '<div class="defaults">'+
-        '<h1>Mortgage Stats</h1>'+
+        '<h1 class="msTitle">Mortgage Stats</h1>'+
           '<p class="padding">' +
             "Affordability Amount" +
           '</p>'+
@@ -53,36 +53,36 @@ var InfoView = Backbone.View.extend({
       console.log("THIS IS DEFAULTS RIGHT NOW", this.model._previousAttributes);
       this.$el.append(
         '<div class="defaults">'+
-          '<h1>Mortgage Stats</h1>'+
+          '<h1 class="msTitle">Mortgage Stats</h1>'+
             '<p class="padding">' +
               "Affordability Amount" +
             '</p>'+
-            '<p class="center">'
-              +JSON.stringify("$"+this.model._previousAttributes.affordabilityAmount)+
+            '<p class="center"><span>$</span>'
+              +this.model._previousAttributes.affordabilityAmount+
             '</p>'+
             '<p class="padding">' +
               "Monthly Debts" +
             '</p>'+
-            '<p class="center">'
-              +JSON.stringify("$"+this.model._previousAttributes.monthlyDebts)+
+            '<p class="center"><span>$</span>'
+              +this.model._previousAttributes.monthlyDebts+
             '</p>'+
             '<p class="padding">' +
               "Monthly Hazard Insurance" +
             '</p>'+
-            '<p class="center">'
-              +JSON.stringify("$"+this.model._previousAttributes.monthlyHazardInsurance)+
+            '<p class="center"><span>$</span>'
+              +this.model._previousAttributes.monthlyHazardInsurance+
             '</p>'+
             '<p class="padding">' +
               "Monthly HOA Dues" +
             '</p>'+
-            '<p class="center">'
-              +JSON.stringify("$"+this.model._previousAttributes.monthlyHoaDues)+
+            '<p class="center"><span>$</span>'
+              +this.model._previousAttributes.monthlyHoaDues+
             '</p>'+
             '<p class="padding">' +
               "Monthly Income" +
             '</p>'+
-            '<p class="center">'
-              +JSON.stringify("$"+this.model._previousAttributes.monthlyIncome)+
+            '<p class="center"><span>$</span>'
+              +this.model._previousAttributes.monthlyIncome+
             '</p>'+
         '</div>'
       );
