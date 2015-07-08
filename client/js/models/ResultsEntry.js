@@ -27,7 +27,7 @@ var ResultsEntry = Backbone.Model.extend({
         this.set("monthlyDebts", response.response.monthlyDebts);
         this.set("monthlyHazardInsurance", response.response.monthlyHazardInsurance);
         this.set("monthlyHoaDues", response.response.monthlyHoaDues);
-        this.set("monthlyincome", response.response.monthlyIncome);
+        this.set("monthlyIncome", response.response.monthlyIncome);
         // console.log("THIS IS DEFAULTS", defaults);
         return response;
     },
