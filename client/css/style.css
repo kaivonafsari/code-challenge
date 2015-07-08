@@ -124,7 +124,8 @@ label {
   border-color: white;
   border-style: solid;
   border-width: 2px;
-  padding: 13px 37px;
+  padding: 13px;
+  padding-right: 64px;
   border-radius: 8px;
   margin: 45px 0px;
 }
