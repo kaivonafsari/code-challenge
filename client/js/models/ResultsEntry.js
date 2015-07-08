@@ -26,7 +26,13 @@ var ResultsEntry = Backbone.Model.extend({
 
   parse: function(response) {
         console.log("THIS IS THE RESPONSE", response);
-        defaults = response.response.affordabilityAmount;
+        var obj = {};
+        obj.affordabilityAmount =response.response.affordabilityAmount;
+        obj.monthlyDebts = response.response.monthlyDebts;
+        obj.monthlyHazardInsurance = response.response.monthlyHazardInsurance;
+        obj.monthlyHoaDues = response.response.monthlyHoaDues;
+        obj.monthlyIncome = response.response.monthlyIncome;
+        defaults = obj;
         console.log("THIS IS DEFAULTS", defaults);
         return response;
     },
