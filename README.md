@@ -1,4 +1,4 @@
 # What's Your Mortgage
-Small MVP to retireve data from Zillow API.
+Small MVP to retrieve data from Zillow API.
 
 
