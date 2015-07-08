@@ -1,3 +1,3 @@
 var app = new AppView({
-  model: new WeatherEntry()
+  model: new ResultsEntry()
 });

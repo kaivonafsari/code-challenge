@@ -5,7 +5,7 @@ var InputView = Backbone.View.extend({
 
   events: {
     // 'keydown': 'keyAction',
-     'submit': 'getFilter'
+     'submit': 'bundleData'
   },
 
   initialize: function() {
@@ -31,7 +31,7 @@ var InputView = Backbone.View.extend({
     // return this;
   },
 
-  getFilter: function(e) {
+  bundleData: function(e) {
     e.preventDefault();
     console.log("HELLO WORLD!");
     var info = {};
@@ -42,8 +42,7 @@ var InputView = Backbone.View.extend({
     info.rate = this.$el.find("#rate").val();
     console.log(info);
 
-    this.model.addWeatherEntry(info);
-    // this.$el.append("<div>this.collection.mortgageData.response.affordabilityAmount</div>");
+    this.model.getInfo(info);
   },
 
   clearField: function(){

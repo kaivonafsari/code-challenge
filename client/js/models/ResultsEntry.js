@@ -18,7 +18,7 @@ var ResultsEntry = Backbone.Model.extend({
     // totalTaxesFeesAndInsurance: ""
   },
 
-  url: '/stuff',
+  url: '/getInfo',
 
   initialize: function() {},
 
@@ -31,7 +31,7 @@ var ResultsEntry = Backbone.Model.extend({
         return response;
     },
   
-  addWeatherEntry: function(info) {
+  getInfo: function(info) {
     console.log("I'm inside the API call!" + JSON.stringify(info));
     this.fetch({data: info, type: 'POST'}).then(this.hailMary.bind(this));
 
