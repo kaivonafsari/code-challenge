@@ -5,7 +5,7 @@ var InfoView = Backbone.View.extend({
   events: {},
   
   initialize: function() {
-  	this.model.on('info', this.restart, this);
+  	this.model.on('info', this.render, this);
   	console.log("here");
     this.render();
   },
@@ -48,12 +48,6 @@ var InfoView = Backbone.View.extend({
           '</p>'+
       '</div>'
     );
-  },
-
-  restart: function(){
-  	console.log("I'm INSIDE RESTART")
-  	this.$el.empty();
-  	this.$el.html(this.model.toJSON());
   }
 
 });
