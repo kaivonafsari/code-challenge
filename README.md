@@ -1,4 +1,4 @@
-# HowsTheWeather
-Tells you the weather when you put in a zip code.
+# What's Your Mortgage
+Small MVP to retireve data from Zillow API.
 
-Demo: http://dannydelott.github.io/HowsTheWeather
+
