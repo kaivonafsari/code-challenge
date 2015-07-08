@@ -7,7 +7,7 @@ var TitleView = Backbone.View.extend({
   },
 
   render: function() {
-    this.$el.text('What\'s Your Mortgage?');
+    this.$el.text('What\'s Your Mortgage?').addClass("title");
     return this;
   }
 

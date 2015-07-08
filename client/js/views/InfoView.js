@@ -1,6 +1,4 @@
 var InfoView = Backbone.View.extend({
-
-  model: ResultsEntry,	
   
   el: '<div>',
 
@@ -15,13 +13,47 @@ var InfoView = Backbone.View.extend({
   render: function() {
   	console.log('WORKSSSS')
   	this.$el.empty();
-    this.$el.append('<div class="defaults"><h1>Mortgage Stats</h1><p class="center">'+JSON.stringify(this.model.defaults)+'</p></div>');
+    this.$el.append(
+      '<div class="defaults">'+
+        '<h1>Mortgage Stats</h1>'+
+          '<p class="padding">' +
+            "Affordability Amount" +
+          '</p>'+
+          '<p class="center">'
+            +JSON.stringify(this.model.defaults.affordabilityAmount)+
+          '</p>'+
+          '<p class="padding">' +
+            "Monthly Debts" +
+          '</p>'+
+          '<p class="center">'
+            +JSON.stringify(this.model.defaults.monthlyDebts)+
+          '</p>'+
+          '<p class="padding">' +
+            "Monthly Hazard Insurance" +
+          '</p>'+
+          '<p class="center">'
+            +JSON.stringify(this.model.defaults.monthlyHazardInsurance)+
+          '</p>'+
+          '<p class="padding">' +
+            "Monthly HOA Dues" +
+          '</p>'+
+          '<p class="center">'
+            +JSON.stringify(this.model.defaults.monthlyHoaDues)+
+          '</p>'+
+          '<p class="padding">' +
+            "Monthly Income" +
+          '</p>'+
+          '<p class="center">'
+            +JSON.stringify(this.model.defaults.monthlyIncome)+
+          '</p>'+
+      '</div>'
+    );
   },
 
   restart: function(){
   	console.log("I'm INSIDE RESTART")
   	this.$el.empty();
-  	this.$el.this.$el.html(this.model.toJSON());
+  	this.$el.html(this.model.toJSON());
   }
 
 });
