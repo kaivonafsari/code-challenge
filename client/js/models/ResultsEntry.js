@@ -16,14 +16,19 @@ var ResultsEntry = Backbone.Model.extend({
 
   parse: function(response) {
         console.log("THIS IS THE RESPONSE", response);
-        var obj = {};
-        obj.affordabilityAmount =response.response.affordabilityAmount;
-        obj.monthlyDebts = response.response.monthlyDebts;
-        obj.monthlyHazardInsurance = response.response.monthlyHazardInsurance;
-        obj.monthlyHoaDues = response.response.monthlyHoaDues;
-        obj.monthlyIncome = response.response.monthlyIncome;
-        defaults = obj;
-        console.log("THIS IS DEFAULTS", defaults);
+        // var obj = {};
+        // obj.affordabilityAmount =response.response.affordabilityAmount;
+        // obj.monthlyDebts = response.response.monthlyDebts;
+        // obj.monthlyHazardInsurance = response.response.monthlyHazardInsurance;
+        // obj.monthlyHoaDues = response.response.monthlyHoaDues;
+        // obj.monthlyIncome = response.response.monthlyIncome;
+        // defaults = obj;
+        this.set("affordabilityAmount", response.response.affordabilityAmount);
+        this.set("monthlyDebts", response.response.monthlyDebts);
+        this.set("monthlyHazardInsurance", response.response.monthlyHazardInsurance);
+        this.set("monthlyHoaDues", response.response.monthlyHoaDues);
+        this.set("monthlyincome", response.response.monthlyIncome);
+        // console.log("THIS IS DEFAULTS", defaults);
         return response;
     },
   

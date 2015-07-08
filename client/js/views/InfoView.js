@@ -5,7 +5,7 @@ var InfoView = Backbone.View.extend({
   events: {},
   
   initialize: function() {
-  	this.model.on('info', this.render, this);
+  	this.model.on('change', this.render, this);
   	console.log("here");
     this.render();
   },
