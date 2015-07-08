@@ -13,6 +13,7 @@ var InfoView = Backbone.View.extend({
   render: function() {
   	console.log('WORKSSSS')
   	this.$el.empty();
+    console.log("THIS IS DEFAULTS RIGHT NOW", this.model.defaults);
     this.$el.append(
       '<div class="defaults">'+
         '<h1>Mortgage Stats</h1>'+

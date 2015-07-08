@@ -6,12 +6,14 @@ var AppView = Backbone.View.extend({
 
     this.title = new TitleView();
 
+    var myResultsEntry = new ResultsEntry();
+
     this.input = new InputView({
-      model: new ResultsEntry()
+      model: myResultsEntry
     });
 
     this.info = new InfoView({
-      model: new ResultsEntry()
+      model: myResultsEntry
     });
 
     this.render();
