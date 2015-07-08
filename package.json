@@ -1,0 +1,29 @@
+{
+ "name": "code-challenge",
+ "version": "1.0.0",
+ "description": "Tells you the weather when you put in a zip code.",
+ "main": "index.js",
+ "engines": {
+   "node": "0.12.6",
+   "npm" : "2.11.2"
+ },
+ "scripts": {
+   "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "repository": {
+   "type": "git",
+   "url": "git+https://github.com/kaivonafsari/code-challenge.git"
+ },
+ "keywords": [],
+ "author": "",
+ "license": "ISC",
+ "bugs": {
+   "url": "https://github.com/kaivonafsari/code-challenge/issues"
+ },
+ "homepage": "https://github.com/kaivonafsari/code-challenge#readme",
+ "dependencies": {
+   "body-parser": "^1.13.2",
+   "express": "^4.13.1",
+   "request": "^2.58.0"
+ }
+}
